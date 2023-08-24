@@ -1,0 +1,1 @@
+# NanoID plugin for Godot
