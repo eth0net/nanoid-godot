@@ -1,6 +1,14 @@
+@tool
 extends Node
 
-func _ready():
-	print(NanoID.generate())
-	print(NanoID.Generator.new("abc", 5).generate())
-	print(NanoID.Generator.new(NanoID.Alphabets.LOWERCASE, 15).generate())
+# this prints nanoids in output when saving files
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_EDITOR_POST_SAVE:
+		print()
+		print(NanoID.new())
+		print(NanoID.new(3))
+		print(NanoID.generate())
+		print(NanoID.generate(5))
+		print(NanoID.with_alphabet("abc", 10))
+		print(NanoID.with_alphabet(NanoID.Alphabets.LOWERCASE))
+		print()
