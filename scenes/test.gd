@@ -5,8 +5,6 @@ extends Node
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_EDITOR_POST_SAVE:
 		print()
-		print(NanoID.new())
-		print(NanoID.new(3))
 		print(NanoID.generate())
 		print(NanoID.generate(5))
 		print(NanoID.with_alphabet("abc", 10))
