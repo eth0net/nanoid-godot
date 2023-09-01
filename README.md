@@ -40,8 +40,6 @@ print(NanoID.with_alphabet(NanoIDAlphabets.LOWERCASE))
 ```
 
 ```text
-dLAomMtqdxnBngH3e0nmk
-5We
 sfwL2cnmzZVumDZdyzesD
 my7te
 bcbabbacbc
